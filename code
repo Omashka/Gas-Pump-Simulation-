@@ -1,0 +1,41 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main() {
+double cash; 
+const double gallon=5; 
+double total;
+  char rerun ; 
+  int code; 
+int Echoice=2; 
+
+//code to shut down (1234)
+
+cout << setw(50)<< " Hello Welcome to Omi's Gas Place! " << "\n" << endl; 
+
+cout << setw(50)<< "The Price Of One Gallon Today Is $5.00" << "\n"<<endl; 
+  
+
+do 
+  { cout <<"Please Enter The Amount Of Cash: $" << "\n" <<endl;
+    cin >> cash ;
+
+   total= cash/gallon ; 
+
+   cout <<"The Total Of Gas You Dispensed Is " <<total<< " gallons."  << endl; 
+   cout <<"You Have Spent A Total Of $" << cash << endl; 
+
+  cout << "\nThank You Have a Great Day!" ; 
+
+  
+
+cout << setw(50) <<"\n\n\n1.New Car?(Y/N) : " ; 
+    cout <<"2.OR Shut System Down?" << endl; 
+    cin >> rerun ; 
+  }while(rerun== 'y' || rerun == 'Y') ; 
+
+   cout <<setw(50)<<"Please Enter The Code" << "\n" <<endl;
+   cin>> Echoice; 
+    if(Echoice==1234) cout << "GOODBYE" << endl; 
+    else { cout <<"THE CODE IS INCORRECT!" << endl; }
+  
